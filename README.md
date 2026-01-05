@@ -26,5 +26,5 @@ https://www.bilibili.com/video/BV1ix411f7Yp/?spm_id_from=333.337.search-card.all
 https://space.bilibili.com/88461692?spm_id_from=333.337.0.0
 
 <div align="right">
-    <img src="./README.assets/signature.svg" alt="signature" width="160" style="height:auto;">
+    <img src="./README.assets/signature.gif" alt="signature" width="160" style="height:auto;">
 </div>
