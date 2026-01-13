@@ -1,0 +1,120 @@
+\documentclass{article}
+\usepackage{ctex}
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+
+\title{ShanghaiTech MATH1112: Linear Algebra \\ Fall 2025 Midterm}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section*{P1}
+讨论在不同参数 $\lambda$ 下，线性方程组
+\[
+\begin{cases}
+x_1 + x_2 - x_3 = 1 \\
+x_1 + \lambda x_2 + 3x_3 = 2 \\
+2x_1 + 3x_2 + \lambda x_3 = 3
+\end{cases}
+\]
+何时有唯一解、无穷多解、无解，并在无穷多解时给出通解。
+
+\section*{P2}
+设 $V = \text{span}\{\mathbf{v}_1, \mathbf{v}_2, \mathbf{v}_3, \mathbf{v}_4\} \subseteq \mathbb{R}^4$，其中
+\[
+\mathbf{v}_1 = \begin{pmatrix} 1 \\ 2 \\ -1 \\ 1 \end{pmatrix}, \quad
+\mathbf{v}_2 = \begin{pmatrix} 2 \\ 4 \\ -2 \\ 2 \end{pmatrix}, \quad
+\mathbf{v}_3 = \begin{pmatrix} 3 \\ 7 \\ 2 \\ 0 \end{pmatrix}, \quad
+\mathbf{v}_4 = \begin{pmatrix} 1 \\ 3 \\ 4 \\ -2 \end{pmatrix}.
+\]
+求 $V$ 的一组由 $\{\mathbf{v}_1, \mathbf{v}_2, \mathbf{v}_3, \mathbf{v}_4\}$ 中向量构成的基。
+
+\section*{P3}
+线性映射 $f: \mathbb{R}^n \to \mathbb{R}^m$, $\mathbf{v}_1, \dots, \mathbf{v}_k \in \mathbb{R}^n$, $\mathbf{v}_k = f(\mathbf{u}_k)$
+\begin{enumerate}
+    \item 证明： 若$\{\mathbf{v}_1, \mathbf{v}_2, \dots, \mathbf{v}_k\}$ 线性无关，则 $\{\mathbf{u}_1, \mathbf{u}_2, \dots, \mathbf{u}_k\}$ 也线性无关。
+    \item 命题："若$\{\mathbf{u}_1, \mathbf{u}_2, \dots, \mathbf{u}_k\}$ 线性无关，则 $\{\mathbf{v}_1, \mathbf{v}_2, \dots, \mathbf{v}_k\}$ 也线性无关。" 是否正确？是请给出证明，否请举反例说明。
+\end{enumerate}
+
+\section*{P4}
+线性映射 $\phi: \mathbb{R}^4 \to \mathbb{R}^3$ 定义为：
+\[
+\phi([x_1, x_2, x_3, x_4]) = [x_1 + 3x_3 + x_4, \; 4x_2 + 5x_4, \; x_1 + 2x_2 + x_3].
+\]
+\begin{enumerate}
+    \item 写出 $\phi$ 对应的矩阵 $A$，即 $\phi(\mathbf{x}) = A\mathbf{x}$。
+    \item 求 $\ker \phi$ 与 $\operatorname{im} \phi$ 的维数。
+\end{enumerate}
+
+\section*{P5}
+对 $n \in \mathbb{N}^+$ 及 $a_1, a_2, \dots, a_{n-1} \in \mathbb{R}$,有\(n\)阶方阵:
+\[
+M(a_1, a_2, \dots, a_{n-1}) =
+\begin{pmatrix}
+1 & a_1 & a_2 & \cdots & a_{n-2} & a_{n-1} \\
+0 & 1 & 0 & \cdots & 0 & 0 \\
+0 & 0 & 1 & \cdots & 0 & 0 \\
+\vdots & \vdots & \vdots & \ddots & \vdots & \vdots \\
+0 & 0 & 0 & \cdots & 0 & 1
+\end{pmatrix}
+\]
+定义 $n$ 阶方阵集合：
+\[
+G = \{ M(a_1, a_2, \dots, a_{n-1}) \mid a_i \in \mathbb{R} \}.
+\]
+证明 $G$ 对于矩阵乘法与求逆均封闭，即 对$ \forall A, B \in G$，有 $AB \in G$ 且 $A^{-1} \in G$。
+
+\section*{P6}
+计算下述行列式：
+
+$\begin{vmatrix}
+1 & 1 \\
+1 & 6
+\end{vmatrix}
+\hspace{3cm}
+\begin{vmatrix}
+2 & 0 & 1 \\
+3 & 1 & 0 \\
+1 & 2 & 2
+\end{vmatrix}
+\hspace{3cm}
+\begin{vmatrix}
+a_0 & -1 & 0 & 0 & \dots & 0 & 0 \\
+a_1 & x & -1 & 0 & \dots & 0 & 0 \\
+a_2 & 0 & x & -1 & \dots & 0 & 0 \\
+\vdots & \vdots & \vdots & \vdots & \ddots & \vdots & \vdots \\
+a_{n-2} & 0 & 0 & 0 & \dots & x & -1 \\
+a_{n-1} & 0 & 0 & 0 & \dots & 0 & x
+\end{vmatrix}$
+
+
+\section*{P7}
+设 $A, B$ 均为 $n$ 阶方阵，$[A \ B]$ 与 $\begin{bmatrix} A \\ B \end{bmatrix}$ 分别表示 $n \times 2n$ 与 $2n \times n$ 的分块矩阵。
+\begin{enumerate}
+    \item 证明：$\max\{\operatorname{rank} A, \operatorname{rank} B\} \le \operatorname{rank} [A \ B] \le \operatorname{rank} A + \operatorname{rank} B$。
+    \item "$\operatorname{rank} [A \ B] = \operatorname{rank} \begin{bmatrix} A \\ B \end{bmatrix} $ "是否正确？若是，请给出证明；若否，请举反例说明。
+\end{enumerate}
+
+\section*{P8}
+\[
+A = \begin{pmatrix}
+1 & 2 & 3 & \cdots & n-1 & n \\
+0 & 2 & 3 & \cdots & n-1 & n \\
+0 & 0 & 3 & \cdots & n-1 & n \\
+\vdots & \vdots & \vdots & \ddots & \vdots & \vdots \\
+0 & 0 & 0 & \cdots & n-1 & n \\
+0 & 0 & 0 & \cdots & 0 & n
+\end{pmatrix}.
+\]
+求 $A^{-1}$、$\sum\limits_{i=1}^n \sum\limits_{j=1}^n A_{ij}$($A_{ij}$ 指 $a_{ij}$的代数余子式)。
+
+\section*{P9}
+设 $A = (a_{ij})$ 是 $(n+1) \times n$ 矩阵，$\mathbf{x} = [x_1, x_2, \dots, x_n]^T$ 是未知数列向量，$\mathbf{b} = [b_1, b_2, \dots, b_{n+1}]^T$ 是常数列向量，且 $\operatorname{rank} A = n$。
+
+证明：线性方程组 $A\mathbf{x} = \mathbf{b}$ 有解的充要条件是增广矩阵 $(A \mid \mathbf{b})$ 的行列式值为 $0$。
+
+\end{document}
