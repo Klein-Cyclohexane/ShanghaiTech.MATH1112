@@ -17,7 +17,7 @@ ShanghaiTech MATH1112 Linear Algebra Fall 2025
 
 2.《Elementary Linear Algebra》was used as the textbook before 2025.
 
-3.《高等代数》和《高等代数学习指导书》俗称“丘砖”，基本上把对应范围的丘砖题目看完（要求也没有那么高，毕竟我们还是”线性代数”而非”高等代数”），~考试的时候大概率能碰到原题。~
+3.《高等代数》和《高等代数学习指导书》俗称“丘砖”，基本上把对应范围的丘砖题目看完（要求也没有那么高，毕竟我们还是”线性代数”而非”高等代数”），~~考试的时候大概率能碰到原题。~~
 
 4.To supplement your understanding, it is highly recommended to watch MIT's Linear Algebra course and 3Blue1Brown's explanatory videos if you encounter any confusion with the textbook or course material.   
 Linear Algebra coures by William Gilbert Strang from MIT  
